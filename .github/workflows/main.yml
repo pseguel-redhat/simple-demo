@@ -11,4 +11,4 @@ jobs:
     - name: Call REST API
       uses: swinton/httpie.action@1.0.6
       with:
-        args: "POST https://d95ced56.ngrok.io/api/v2/job_templates/7/launch/ -a pseguel:ansible
+        args: "POST https://d95ced56.ngrok.io/api/v2/job_templates/7/launch/ -a pseguel:ansible"
