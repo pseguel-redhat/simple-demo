@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: HTTP client
+      uses: swinton/httpie.action@1.0.6
+      args: 
+        - "POST"
+        - "https://d95ced56.ngrok.io/api/v2/job_templates/7/launch/"
+        - "--auth=ansible"
